@@ -17,6 +17,27 @@ Batocera's standard image uses a GPT partition table with UEFI boot structure. M
 
 The solution is to manually convert Batocera to use MBR/Legacy boot instead of GPT/UEFI.
 
+## Quick Fix: Automated Script
+
+Don't want to run 20+ manual commands? Use the automated script instead:
+
+```bash
+# Boot SystemRescue, mount your Batocera image drive, then run:
+wget https://raw.githubusercontent.com/Nomuarch/batocera-legacy-boot-fix/main/batocera-mbr-converter.sh
+chmod +x batocera-mbr-converter.sh
+sudo ./batocera-mbr-converter.sh
+```
+
+The script handles everything: partitioning, copying, filesystem expansion, and bootloader installation. Just follow the prompts.
+
+**See [SCRIPT-README.md](SCRIPT-README.md) for detailed script instructions.**
+
+---
+
+## Manual Method
+
+If you prefer to understand each step or need to troubleshoot, follow the manual guide below.
+
 ## What You Need
 
 1. **Target PC** - The system you want to run Batocera on
