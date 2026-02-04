@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where:*)",
+      "Bash(cmd.exe /c \"where gh\")",
+      "Bash(winget install:*)",
+      "Bash(\"C:/Program Files/GitHub CLI/gh.exe\" auth status)",
+      "Bash(\"C:/Program Files/GitHub CLI/gh.exe\" auth login --web --git-protocol https)",
+      "Bash(\"C:/Program Files/GitHub CLI/gh.exe\" auth login --web --git-protocol https -h github.com)",
+      "Bash(\"C:/Program Files/GitHub CLI/gh.exe\" auth login -h github.com -p https -w)",
+      "Bash(\"C:/Program Files/GitHub CLI/gh.exe\" repo create batocera-legacy-boot-fix --public --description \"Fix Batocera boot issues \\(Error 1962\\) on older business PCs. Includes manual guide and automated MBR/Legacy conversion script.\")",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(\"C:/Program Files/GitHub CLI/gh.exe\" repo edit Nomuarch/batocera-legacy-boot-fix --add-topic batocera --add-topic retro-gaming --add-topic emulation --add-topic boot-fix --add-topic legacy-boot --add-topic mbr)",
+      "Bash(\"C:/Program Files/GitHub CLI/gh.exe\" repo view Nomuarch/batocera-legacy-boot-fix)",
+      "Bash(\"C:/Program Files/GitHub CLI/gh.exe\" api repos/Nomuarch/batocera-legacy-boot-fix/contents --jq '.[].name')"
+    ]
+  }
+}
